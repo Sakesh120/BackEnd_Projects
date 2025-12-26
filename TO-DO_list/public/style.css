@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: rgb(130, 123, 123);
+  color: bisque;
+  padding: 15px 25px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(217, 212, 206);
+  font-weight: bolder;
+  transition: all;
+  transition-duration: 1.2;
+}
+
+nav ul li a:hover {
+  color: rgb(205, 169, 126);
+}
