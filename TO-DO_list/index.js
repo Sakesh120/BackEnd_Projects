@@ -13,6 +13,9 @@ app.get("/", (req, res) => {
 app.get("/add", (req, res) => {
   res.render("taskAdd");
 });
+app.post("/submit", (req, res) => {
+  res.redirect("/");
+});
 app.get("/update", (req, res) => {
   res.render("taskUpdate");
 });

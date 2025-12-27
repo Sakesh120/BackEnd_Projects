@@ -38,4 +38,57 @@ nav ul li a {
 
 nav ul li a:hover {
   color: rgb(205, 169, 126);
+  text-decoration: underline;
+}
+
+/* form style */
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.title {
+  margin: 5px;
+
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 35vw;
+  padding: 25px 20px;
+
+  box-shadow: 1px 1px 5px rgb(174, 167, 167);
+  gap: 25px;
+}
+
+.text {
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid rgba(46, 8, 8, 0.286);
+  padding: 5px 3px;
+  font-size: 18px;
+}
+
+#area {
+  height: 100px;
+  color: rgb(82, 75, 75);
+  resize: vertical;
+}
+
+#area:active {
+  border: 1px solid rgba(156, 107, 15, 0.652);
+}
+
+button {
+  background-color: #4f4848b3;
+  color: rgb(245, 240, 235);
+  cursor: pointer;
 }

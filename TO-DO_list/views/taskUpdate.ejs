@@ -10,7 +10,15 @@
 
 <body>
   <%-include('navbar') %>
-    <h1>Update Task here</h1>
+    <div class="container">
+      <div class="title">
+        <h1>Update the Task</h1>
+      </div>
+      <form action="/submit" method="post">
+        <input type="text" class="text" placeholder="Enter tille .." required>
+        <textarea name="massege" class="text" id="area"></textarea>
+        <button class="text">Add Task</button>
+      </form>
 </body>
 
 </html>
