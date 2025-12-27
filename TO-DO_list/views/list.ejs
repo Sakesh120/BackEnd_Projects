@@ -10,7 +10,25 @@
 
 <body>
   <%-include('navbar') %>
-    <h1>TO DO list</h1>
+    <div class="container">
+      <h1>My Tasks</h1>
+      <ul id="task-list">
+        <%for(let task of result){ %>
+          <li class="task-item">
+            <div class="task-title">
+              <%= task.title%>
+            </div>
+            <div class="task-massage">
+              <%= task.massege%>
+            </div>
+            <div class="btns">
+              <button class="delete-btn" type="submit" onclick=""><a href="/delete/<%= task._id%>">Delete</a></button>
+              <button class="delete-btn" type="submit" onclick=""><a href="/update/<%= task._id%>">Update</a></button>
+            </div>
+          </li>
+          <% } %>
+      </ul>
+    </div>
 </body>
 
 </html>

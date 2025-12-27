@@ -92,3 +92,55 @@ button {
   color: rgb(245, 240, 235);
   cursor: pointer;
 }
+
+/* task-list */
+#task-list {
+  margin-top: 20px;
+  min-width: 600px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.task-item {
+  list-style: none;
+  padding: 10px 12px;
+  border-left: 5px solid rgb(239, 160, 12);
+  box-shadow: 2px 2px 5px rgba(153, 149, 149, 0.684);
+  border-radius: 10px;
+  background-color: #2ff4dd72;
+  cursor: progress;
+}
+.task-title {
+  font-size: 20px;
+  margin: 5px 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(13, 16, 50);
+}
+.task-massage {
+  font-size: medium;
+  color: rgb(96, 93, 93);
+  margin: 5px 0px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+.delete-btn {
+  padding: 5px 6px;
+  border-radius: 5px;
+  background-color: #289319;
+  transition-duration: 0.5s;
+  border: 1px solid rgba(128, 128, 128, 0.488);
+}
+.delete-btn:hover {
+  background-color: #1c5b14;
+}
+.delete-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}

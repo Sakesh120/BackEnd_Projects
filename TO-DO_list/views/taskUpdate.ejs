@@ -14,10 +14,11 @@
       <div class="title">
         <h1>Update the Task</h1>
       </div>
-      <form action="/submit" method="post">
-        <input type="text" class="text" placeholder="Enter tille .." required>
-        <textarea name="massege" class="text" id="area"></textarea>
-        <button class="text">Add Task</button>
+      <form action="/update/<%= result._id %>" method="post">
+        <input type="text" class="text" name="title" placeholder="Enter tille .."
+          value="<%= result? result.title :'' %>" required>
+        <textarea name="massege" class="text" id="area"" ><%= result? result.massege :"" %></textarea>
+        <button class=" text">Update Task</button>
       </form>
 </body>
 
