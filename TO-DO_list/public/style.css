@@ -52,6 +52,9 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
+.list-form {
+  min-width: 45vw;
+}
 .title {
   margin: 5px;
 
